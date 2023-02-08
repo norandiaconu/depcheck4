@@ -1,29 +1,20 @@
-# depcheck
+# depcheck4
 
 Depcheck is a tool for analyzing the dependencies in a project to see: how each dependency is used, which dependencies are useless, and which dependencies are missing from `package.json`.
-
-## Status
-
-[![Build Status](https://github.com/depcheck/depcheck/workflows/ci/badge.svg)](https://github.com/depcheck/depcheck/actions)
-[![Financial Contributors on Open Collective](https://opencollective.com/depcheck/all/badge.svg?label=financial+contributors)](https://opencollective.com/depcheck) [![Build status](https://ci.appveyor.com/api/projects/status/xbooh370dinuyi0y/branch/master?svg=true)](https://ci.appveyor.com/project/lijunle/depcheck/branch/master)
-[![codecov.io](https://codecov.io/github/depcheck/depcheck/coverage.svg?branch=master)](https://codecov.io/github/depcheck/depcheck?branch=master)
-
-[![dependencies Status](https://david-dm.org/depcheck/depcheck/status.svg)](https://david-dm.org/depcheck/depcheck)
-[![devDependencies Status](https://david-dm.org/depcheck/depcheck/dev-status.svg)](https://david-dm.org/depcheck/depcheck?type=dev)
 
 ## Installation
 
 ```
-npm install -g depcheck
+npm install -g depcheck4
 ```
 
 Or simply using [npx](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner) which is a package runner bundled in `npm`:
 
 ```
-$ npx depcheck
+$ npx depcheck4
 ```
 
-_Notice:_ depcheck needs node.js >= 10.
+_Notice:_ depcheck4 needs node.js >= 10.
 
 ## Syntax Support
 
@@ -36,10 +27,10 @@ Depcheck not only recognizes the dependencies in JavaScript files, but also supp
 - [SASS and SCSS](http://sass-lang.com/) (with `node-sass` dependency)
 - [Vue.js](https://vuejs.org/) (with `@vue/compiler-sfc` dependency)
 
-To get the syntax support by external dependency, please install the corresponding package explicitly. For example, for TypeScript user, install depcheck with `typescript` package:
+To get the syntax support by external dependency, please install the corresponding package explicitly. For example, for TypeScript user, install depcheck4 with `typescript` package:
 
 ```
-npm install -g depcheck typescript
+npm install -g depcheck4 typescript
 ```
 
 ## Special
@@ -63,7 +54,7 @@ The _special_ component is used to recognize the dependencies that are not gener
 - `tslint` - [TSLint](https://www.npmjs.com/package/tslint) configuration presets, parsers and plugins
 - `ttypescript` - [ttypescript](https://github.com/cevek/ttypescript) transformers
 - `webpack` - [Webpack](https://www.npmjs.com/package/webpack) loaders
-- `serverless`- [Serverless](https://www.npmjs.com/package/serverless) plugins
+- `serverless` - [Serverless](https://www.npmjs.com/package/serverless) plugins
 
 The logic of a special is not perfect. There might be [false alerts](#false-alert). If this happens, please open an issue for us.
 
@@ -246,40 +237,6 @@ If you find that depcheck is reporting a false alert, please [open an issue](htt
 - The output from `depcheck --json` command. Beautified JSON is better.
 - Which dependencies are considered as false alert?
 - How are you using those dependencies, what do the files look like?
-
-## Changelog
-
-We use the [GitHub release page](https://github.com/depcheck/depcheck/releases) to manage changelog.
-
-## Contributors
-
-### Code Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/depcheck/depcheck/graphs/contributors"><img src="https://opencollective.com/depcheck/contributors.svg?width=890&button=false" /></a>
-
-### Financial Contributors
-
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/depcheck/contribute)]
-
-#### Individuals
-
-<a href="https://opencollective.com/depcheck"><img src="https://opencollective.com/depcheck/individuals.svg?width=890"></a>
-
-#### Organizations
-
-Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/depcheck/contribute)]
-
-<a href="https://opencollective.com/depcheck/organization/0/website"><img src="https://opencollective.com/depcheck/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/1/website"><img src="https://opencollective.com/depcheck/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/2/website"><img src="https://opencollective.com/depcheck/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/3/website"><img src="https://opencollective.com/depcheck/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/4/website"><img src="https://opencollective.com/depcheck/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/5/website"><img src="https://opencollective.com/depcheck/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/6/website"><img src="https://opencollective.com/depcheck/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/7/website"><img src="https://opencollective.com/depcheck/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/8/website"><img src="https://opencollective.com/depcheck/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/depcheck/organization/9/website"><img src="https://opencollective.com/depcheck/organization/9/avatar.svg"></a>
 
 ## License
 

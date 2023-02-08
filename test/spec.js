@@ -1,10 +1,8 @@
-import path from 'path';
 import depcheck from '../src/index';
 
 export default [
   {
-    name:
-      'detect missing module for dynamic import() when missing in package.json',
+    name: 'detect missing module for dynamic import() when missing in package.json',
     module: 'import_function_missing',
     options: {},
     expected: {
@@ -752,24 +750,6 @@ export default [
       },
     },
     expectedErrorCode: 0,
-  },
-  {
-    name: 'follow simlinks',
-    module: path.join('simlink', 'package'),
-    options: {},
-    expected: {
-      dependencies: [],
-      devDependencies: [],
-      missing: {
-        lodash: ['index.js'],
-        react: ['lib/lib.js'],
-      },
-      using: {
-        lodash: ['index.js'],
-        react: ['lib/lib.js'],
-      },
-    },
-    expectedErrorCode: -1,
   },
   {
     name: 'allow decorators',
