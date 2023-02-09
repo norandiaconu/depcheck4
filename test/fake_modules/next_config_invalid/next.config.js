@@ -1,5 +1,5 @@
 const nextConfig = {
-  webpack: (config, { webpack }) => {
+  webpack: (config) => {
     return config;
   },
 };
