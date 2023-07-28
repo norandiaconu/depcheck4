@@ -45,7 +45,7 @@ The _special_ component is used to recognize the dependencies that are not gener
 - `gatsby` - [Gatsby](https://www.npmjs.com/package/gatsby) configuration parser
 - `gulp-load-plugins` - [Gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins) lazy loaded plugins
 - `husky` - [Husky](https://www.npmjs.com/package/husky) configuration parser
-- `istanbul` - [Istanbul nyc](https://www.npmjs.com/package/nyc) configuration extensions
+- `c8` - [c8 - native V8 code-coverage](https://www.npmjs.com/package/c8) configuration extensions
 - `jest` - [Jest](https://www.npmjs.com/package/jest) properties in [Jest Configuration](https://jestjs.io/docs/en/configuration)
 - `karma` - [Karma](https://www.npmjs.com/package/karma) configuration frameworks, browsers, preprocessors and reporters
 - `lint-staged` - [Lint-staged](https://www.npmjs.com/package/lint-staged) configuration parser

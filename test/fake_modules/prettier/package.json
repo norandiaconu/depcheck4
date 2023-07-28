@@ -1,4 +1,4 @@
 {
-  "name": "my-cool-library",
+  "prettier": "@company/prettier-config",
   "version": "9000.0.1"
 }
